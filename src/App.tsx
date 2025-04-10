@@ -4,23 +4,6 @@ import { Panel } from "./components/ui/panel";
 import { Collapse } from "./components/ui/collapse";
 
 function App() {
-  const items = [
-    {
-      id: "1",
-      title: "Collapsible Group Item #1",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
-    },
-    {
-      id: "2",
-      title: "Collapsible Group Item #2",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
-    },
-    {
-      id: "3",
-      title: "Collapsible Group Item #3",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
-    },
-  ];
 
   return (
     <>
