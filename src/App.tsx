@@ -4,7 +4,6 @@ import { Panel } from "./components/ui/panel";
 import { Collapse } from "./components/ui/collapse";
 
 function App() {
-
   return (
     <>
       <div>
@@ -108,6 +107,64 @@ function App() {
         </div>
         <div>
           <Collapse heading="Panel Title">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
+              lacus adipiscing, posuere lectus et, fringilla augue.
+            </p>
+          </Collapse>
+        </div>
+      </div>
+      <div className="grid grid-cols-3">
+        <div>
+          <Collapse variant="default" heading="Default Collapse">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
+              lacus adipiscing, posuere lectus et, fringilla augue.
+            </p>
+          </Collapse>
+        </div>
+        <div>
+          <Collapse variant="primary" heading="Primary Collapse">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
+              lacus adipiscing, posuere lectus et, fringilla augue.
+            </p>
+          </Collapse>
+        </div>
+        <div>
+          <Collapse variant="success" heading="Success Collapse">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
+              lacus adipiscing, posuere lectus et, fringilla augue.
+            </p>
+          </Collapse>
+        </div>
+      </div>
+      <div className="grid grid-cols-3 mt-4">
+        <div>
+          <Collapse variant="info" heading="Info Collapse">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
+              lacus adipiscing, posuere lectus et, fringilla augue.
+            </p>
+          </Collapse>
+        </div>
+        <div>
+          <Collapse variant="warning" heading="Warning Collapse">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
+              lacus adipiscing, posuere lectus et, fringilla augue.
+            </p>
+          </Collapse>
+        </div>
+        <div>
+          <Collapse variant="danger" heading="Danger Collapse">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
