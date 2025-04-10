@@ -18,22 +18,6 @@ function App() {
             </Panel>
           </div>
           <div>
-            <Panel variant="primary" title="Primary Panel">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
-              lacus adipiscing, posuere lectus et, fringilla augue.
-            </Panel>
-          </div>
-        </div>
-        <div className="">
-          <div className="mb-3 ">
-            <Panel variant="success" title="Success Panel">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
-              lacus adipiscing, posuere lectus et, fringilla augue.
-            </Panel>
-          </div>
-          <div>
             <Panel variant="info" title="Info Panel">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
@@ -42,8 +26,24 @@ function App() {
           </div>
         </div>
         <div className="">
-          <div className="mb-3">
+          <div className="mb-3 ">
+            <Panel variant="primary" title="Primary Panel">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
+              lacus adipiscing, posuere lectus et, fringilla augue.
+            </Panel>
+          </div>
+          <div>
             <Panel variant="warning" title="Warning Panel">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
+              lacus adipiscing, posuere lectus et, fringilla augue.
+            </Panel>
+          </div>
+        </div>
+        <div className="">
+          <div className="mb-3">
+            <Panel variant="success" title="Success Panel">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
               lacus adipiscing, posuere lectus et, fringilla augue.
