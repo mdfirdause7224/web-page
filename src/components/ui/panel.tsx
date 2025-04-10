@@ -3,16 +3,16 @@ import * as React from "react";
 import { cn } from "../../lib/utils";
 
 const panelVariants = cva(
-  "border", // Removed bg-[#1f2937] from base styles
+  "border", 
   {
     variants: {
       variant: {
-        default: "border-[#374151] bg-transparent",
-        primary: "border-emerald-600 bg-[#1f2937]",
-        success: "border-blue-600 bg-[#1f2937]",
-        info: "border-cyan-600 bg-[#1f2937]",
-        warning: "border-orange-500 bg-[#1f2937]",
-        danger: "border-rose-600 bg-[#1f2937]",
+        default: "border-[#374151] rounded-sm",
+        primary: "border-emerald-600 rounded-sm",
+        success: "border-blue-600 rounded-sm",
+        info: "border-cyan-600 rounded-sm",
+        warning: "border-orange-500 rounded-sm",
+        danger: "border-rose-600 rounded-sm",
       }
     },
     defaultVariants: {
@@ -39,7 +39,7 @@ const Panel = React.forwardRef<HTMLDivElement, PanelProps>(
       >
         {title && (
           <div className={cn(
-            "text-lg font-semibold p-4 border-b border-inherit text-left flex items-center gap-2",
+            "text-sm font-semibold p-2 px-4 border-b border-inherit text-left flex items-center gap-2 rounded-sm rounded-b-none",
             {
               "bg-transparent text-white": variant === "default",
               "bg-emerald-500 text-white": variant === "primary",
@@ -49,11 +49,25 @@ const Panel = React.forwardRef<HTMLDivElement, PanelProps>(
               "bg-rose-500 text-white": variant === "danger",
             }
           )}>
+            {variant === "info" && (
+              <img
+                src="./info.svg"
+                alt="info"
+                className="h-5 w-5 brightness-0 invert"
+              />
+            )}
+            {variant === "warning" && (
+              <img
+                src="./warning.svg"
+                alt="warning"
+                className="h-5 w-5 brightness-0 invert"
+              />
+            )}
             {icon && <span>{icon}</span>}
             {title}
           </div>
         )}
-        <div className="p-4 text-sm text-white text-left">{children}</div>
+        <div className="p-4 text-sm text-gray-400 bg-transparent text-left">{children}</div>
         {footer && (
           <div className="px-4 py-3 mt-4 border-t border-inherit text-sm text-white/90 text-left">{footer}</div>
         )}
