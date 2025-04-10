@@ -26,6 +26,7 @@ interface CollapseProps extends VariantProps<typeof collapseVariants> {
   children: React.ReactNode;
   className?: string;
   defaultOpen?: boolean;
+  footer?: React.ReactNode;
 }
 
 export function Collapse({
@@ -34,6 +35,7 @@ export function Collapse({
   className,
   defaultOpen = false,
   variant,
+  footer,
 }: CollapseProps) {
   const [isOpen, setIsOpen] = React.useState(defaultOpen);
 
@@ -105,6 +107,22 @@ export function Collapse({
         >
           {children}
         </div>
+        {footer && isOpen && (
+          <div className={cn(
+            "px-4 py-3 mt-4 border-t text-sm text-white/90 text-left",
+            {
+              "border-gray-400": variant === "default",
+              "border-emerald-500": variant === "primary",
+              "border-blue-500": variant === "success",
+              "border-cyan-500": variant === "info",
+              "border-orange-400": variant === "warning",
+              "border-rose-500": variant === "danger",
+              "border-gray-300": !variant
+            }
+          )}>
+            {footer}
+          </div>
+        )}
       </div>
     </div>
   );

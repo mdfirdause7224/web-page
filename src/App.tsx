@@ -146,7 +146,7 @@ function App() {
       </div>
       <div className="grid grid-cols-3 mt-4">
         <div>
-          <Collapse variant="info" heading="Info Collapse">
+          <Collapse variant="info" heading="Info Collapse" footer="footer">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
@@ -164,7 +164,7 @@ function App() {
           </Collapse>
         </div>
         <div>
-          <Collapse variant="danger" heading="Danger Collapse">
+          <Collapse variant="danger" heading="Danger Collapse" footer="Footer">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare
